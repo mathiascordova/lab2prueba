@@ -10,8 +10,11 @@ namespace spotify
     {
         static void Main(string[] args)
         {
-            Cancion c1 = new Cancion("SAD!", "?", "XXXTENTACION", "Emo Rap");
-            Console.WriteLine(c1.Informacion());
+            Espotifai spotify = new Espotifai();
+            Console.WriteLine(spotify.AgregarCancion(new Cancion("","","","")));
+            Console.WriteLine(spotify.AgregarCancion(new Cancion("","","","")));
+            Console.WriteLine(spotify.AgregarCancion(new Cancion("SAD!", "?", "XXXTENTACION", "Emo Rap")));
+            spotify.VerCanciones();
         }
     }
 }
